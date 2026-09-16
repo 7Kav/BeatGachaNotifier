@@ -2,8 +2,8 @@ A simple BeatGacha script primarily made for my homescreen.
 
 .env walkthroguh 🔥
 
-[!warning]
-Please rename .env-example to .env otherwise this script will fail to run!
+[!WARNING]
+> Please rename .env-example to .env otherwise this script will fail to run!
 ```
 API_KEY=
 USER_ID=
@@ -11,8 +11,9 @@ USER_ID=
 
 
 Both of these values are needed for this script to work
+
 [!TIP]
-You can get an API key and User ID from [here](https://beatgacha.com/settings?oauth)
+> You can get an API key and User ID from [here](https://beatgacha.com/settings?oauth)
 ```
 REPEAT_SCRIPT=False
 ```
