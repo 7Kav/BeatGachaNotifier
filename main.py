@@ -29,6 +29,14 @@ if api_key is None or api_key == "":
     raise Exception("API key not set")
 
 userID = getenv("USER_ID")
+repeatScript = getenv("REPEAT_SCRIPT")
+
+if repeatScript is None or repeatScript == "":
+    raise Exception("Repeat script not set!")
+elif repeatScript.lower() == "true":
+    repeatScript = True
+elif repeatScript.lower() == "false":
+    repeatScript = False
 
 headers = {
     "accept": "application/json",
@@ -83,3 +91,20 @@ username, CardCount, ShardCount = CardPackNotify()
 print(username)
 print(f"CardCount: {CardCount}")
 print(f"ShardCount: {ShardCount}")
+try:
+    while repeatScript == True:
+        print("Repeating in 30 seconds...")
+        sleep(25)
+        print("Repeating in 5 Seconds...")
+        sleep(5)
+
+        username, CardCount, ShardCount = CardPackNotify()
+
+        print(username)
+        print(f"CardCount: {CardCount}")
+        print(f"ShardCount: {ShardCount}")
+        continue
+except KeyboardInterrupt:
+    print("Shutting down...")
+    sys.exit()
+
