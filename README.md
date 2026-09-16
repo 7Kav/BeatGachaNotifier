@@ -21,3 +21,5 @@ the script will constantly loop every 30 seconds to check for new fresh data if 
 This value needs to be set to True or False otherwise the script will crash.
 
 That's literally it
+
+if you look at the earlier commits, you can clearly understand that I didn't know shit about what I was doing here :sob:
