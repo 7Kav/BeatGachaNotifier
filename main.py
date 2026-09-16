@@ -6,7 +6,7 @@ from os import getenv
 
 # Set to "True" If you don't need the download
 
-Skipdownload = True
+Skipdownload = False
 if Skipdownload == False:
     try:
         print("Attempting Dependency install")
