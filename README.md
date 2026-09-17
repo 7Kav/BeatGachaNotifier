@@ -23,3 +23,5 @@ This value needs to be set to True or False otherwise the script will crash.
 That's literally it
 
 if you look at the earlier commits, you can clearly understand that I didn't know shit about what I was doing here :sob:
+
+I may make a version of this script designed to run on pyto. which is good for python scripts.
